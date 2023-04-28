@@ -1,0 +1,80 @@
+.file-view {
+  width: 500px;
+  background-color: #f5f5f556;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;  
+}
+
+.file-view div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.file-view p {
+  display: flex;
+  justify-content: center;
+}
+
+.file-view div strong {
+  color: #212121;
+  border: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.file-view button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.button-create {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.file-view button:hover {
+  background-color: #19d21f;
+}
+
+.file-view button:active {
+  background-color: #1565c0;
+}
+
+.file-view button:first-of-type {
+  margin-top: 10px;
+}
+
+.file-view button:last-of-type {
+  margin-left: 20px;
+}
+.file-view-tooltip {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  max-width: 300px;
+  z-index: 1;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  color: pink;
+}
+

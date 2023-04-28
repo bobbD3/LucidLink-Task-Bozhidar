@@ -1,0 +1,27 @@
+.file {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+
+.file::after {
+  content: attr(title);
+  position: absolute;
+  display: none;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  z-index: 1;
+  white-space: nowrap;
+  max-width: 300px;
+  overflow-wrap: break-word;
+}
+
+.file:hover::after {
+  display: block;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}

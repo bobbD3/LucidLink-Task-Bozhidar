@@ -1,0 +1,10 @@
+.file-browser {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.file-browser > * {
+  flex: 1;
+
+}

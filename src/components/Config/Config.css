@@ -1,0 +1,92 @@
+.config-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: auto;
+}
+
+.config-container.fade {
+  opacity: 0;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin-top: 2rem;
+  background-color: rgba(76, 175, 80, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2e7d32;
+}
+
+.form-container button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #388e3c;
+}
+
+.recommendation-container {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 15rem;
+  margin-top: 2rem;
+  animation: fadeInOut 8s linear infinite;
+}
+.credentials-container {
+  font-size: 14px;
+  background-color: rgba(76, 175, 80, 0.2);
+  padding: 7px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.credentials-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.credentials-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.credentials-button:hover {
+  background-color: #388e3c;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
